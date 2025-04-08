@@ -1,0 +1,28 @@
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar dependências instaladas
+node_modules/
+
+# Ignorar logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar arquivos do sistema
+.DS_Store
+
+# Ignorar arquivos temporários
+*.swp
+*.swo
+
+# Ignorar pastas de build ou cache (caso use futuramente)
+dist/
+build/
+
+# Ignorar configurações do editor
+.vscode/
+.idea/
+
+# Ignorar arquivos gerados por testes (se adicionar no futuro)
+coverage/

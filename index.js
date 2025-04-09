@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
-import axios from "axios";
-import dotenv from "dotenv";
+const express = require("express");
+const cors = require("cors");
+const axios = require("axios");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
-// Market Trend (apenas 4 criptos principais)
 app.get("/api/market-trend", async (req, res) => {
   const ids = "bitcoin,ethereum,tether,binancecoin";
 
@@ -77,5 +76,5 @@ app.get("/api/chart/:coinId", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Servidor rodando em http://localhost:${PORT}`);
+  console.log(`✅ Servidor rodando na porta ${PORT}`);
 });
